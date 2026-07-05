@@ -9,6 +9,8 @@ public class Quadratic
 		if (Math.abs(d) != d) System.out.println("No real roots");
 		else System.out.println((-b + d) / -2.0 + " " + (-b - d) / -2.0);
 		System.out.println("sin(2b) + sin(3b) is " + (Math.sin(2*b) + Math.sin(3*b)));
+		long t = 10000000000;
+		System.out.println(Math.random() * t);
 	}
 }
 /*
