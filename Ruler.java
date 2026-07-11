@@ -1,13 +1,10 @@
-public class Ruler
-{
-	public static void main(String[] args)
-	{
-		String ruler = " ";
-		int i = 1, t = Integer.parseInt(args[0]);
-		while(i <= t)
-		{
+public class Ruler {
+	//prints the dividend of segments on a ruler
+	public static void main(String[] args) {
+		String ruler = "";
+		int t = Integer.parseInt(args[0]);
+		for(int i = 1; i <= t; ++i) {
 			ruler = ruler + i + ruler;
-			++i;
 		}
 		System.out.println(ruler);
 	}
