@@ -6,7 +6,6 @@ public class PrecisionLapTime {
 		double tracklength = Double.parseDouble(args[2]);
 		//how many decimal places of precision
 		int precision = (int) Math.pow(10,Integer.parseInt(args[3]));
-		System.out.println(precision);
 		double time = seconds + minutes * 60;
 		//MpM meaning Miles per Minute
 		double MpM = time / tracklength;
@@ -14,7 +13,6 @@ public class PrecisionLapTime {
 		double LapSeconds = MpM % 60;
 		//convert decimal to base 6
 		LapSeconds = Math.round(precision * LapSeconds);
-		System.out.println(LapSeconds);
 		LapSeconds /= precision;
 		System.out.println(LapMinutes + "m, " + LapSeconds + "s.");
 	}
