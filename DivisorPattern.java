@@ -1,5 +1,5 @@
 public class DivisorPattern {
-	//print out a "map" of all no remainder divisions for x and y.
+	//print out a "map" that visualizes divisors.
 	public static void main(String[] args) {
 		int t = Integer.parseInt(args[0]);
 		for(int x = 1; x <= t; ++x) {
